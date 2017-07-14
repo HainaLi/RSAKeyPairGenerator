@@ -2,8 +2,7 @@
 Generates a RSA key pair using random.org's random number generator
 Using Python 2.7.10
 
-## Dependencies:
- 	python libraries randomdotorg, pycrypto  
+## Dependencies: python libraries randomdotorg, pycrypto   	
  	pip install randomdotorg, pycrypto
   
 ## Instructions:
