@@ -9,6 +9,8 @@
 
 import randomdotorg
 from Crypto.PublicKey import RSA
+from datetime import datetime
+
 
 class RSAKeyGenerator(object):
 	"""	
@@ -61,9 +63,7 @@ class RSAKeyGenerator(object):
 
 if __name__ == '__main__':
 	print "Demo testing RSA key pair generator"
+	start=datetime.now()
 	rsakeygenerator = RSAKeyGenerator() #add optional key_size length: rsakeygenerator = RSAKeyGenerator(1024)
 	rsakeygenerator.generate_rsa_key_pair()
-	
-
-
-
+	print "Completed in: ", str(datetime.now()-start)
